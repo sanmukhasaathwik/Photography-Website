@@ -106,10 +106,7 @@ Photography Website Project Overview: Developed a responsive photography website
 </html>
 
 
-
-
-
-**CSS CODE:**
+CSS CODE:
 
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bungee+Tint&display=swap');
 
