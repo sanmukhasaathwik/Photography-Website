@@ -104,3 +104,200 @@ Photography Website Project Overview: Developed a responsive photography website
 
 </body>
 </html>
+
+
+
+
+
+**CSS CODE:**
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bungee+Tint&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Baskervville SC", serif;
+    color: white;
+    background-color: lightblue;
+}
+
+/* Header Section */
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #35ea9c5b;
+    padding: 10px 20px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: transform 0.5s, background-color 0.5s, border-bottom 0.5s;
+    color: #8de649;
+}
+
+li:hover {
+    transform: scale(1.1);
+    background-color: #e3f16c;
+    border-bottom: 2px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.icon_area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon_name {
+    font-size: 30px;
+    color: #2e2bd5;
+    font-weight: bold;
+}
+
+.menu_area {
+    margin-right: 10px;
+}
+
+/* Main Content */
+.main_content {
+    background-image: url('AVENGERS WALLPAPER.jpg');
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #e0e0e0;
+}
+
+.main_heading {
+    font-family: 'Bungee Tint', cursive;
+    font-size: 40px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.Services_heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.service_card {
+    max-width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    background: #143750;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+/* About Us Section */
+.about_us {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #0f3460;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 20px;
+    color: #e0e0e0;
+}
+
+.side_img {
+    max-width: 400px;
+}
+
+.side_text {
+    max-width: 500px;
+    text-align: justify;
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Gallery_text {
+    width: 100%;
+    font-size: 2rem;
+    color: #020101;
+    margin-bottom: 20px;
+}
+
+.gallery_images img {
+    max-width: 200px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.gallery_images img:hover 
+{
+    transform: scale(1.1);
+    border: 2px solid #24fe03;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #0a0909;
+    color: #fcd568;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 700px) {
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .side_text {
+        padding: 10px;
+    }
+
+    .service_card {
+        margin-bottom: 20px;
+    }
+
+    .Gallery_text {
+        margin-top: 10px;
+    }
+
+    .menu_area {
+        display: none;
+    }
+}
+
